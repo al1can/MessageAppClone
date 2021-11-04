@@ -1,4 +1,5 @@
 <?php
+
 $servername = 'localhost';
 $username = 'al1can';
 $password = '';
@@ -9,10 +10,21 @@ $conn = mysqli_connect($servername,$username,$password,$dbname);
 if (!$conn) {
 	die("Connection failed! : ". mysqli_connect_error());
 }
-echo "Connection succesfull";
-$sql = 'select * from users';
-$result = mysqli_query($conn, $sql);
-while ($row = mysqli_fetch_assoc($result)) {
-	echo $row['firstname'];
+
+//$sql = "SELECT username FROM users where username = 'alican'";
+//$result = mysqli_query($conn, $sql);
+/*
+if (mysqli_num_rows($result) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result)) {
+    echo $row["username"];
+  }
+} else {
+  echo "0 results";
 }
+*/
+//while($row = mysqli_fetch_assoc($result)) {
+//	print_r($row);
+//}
+
 ?>
