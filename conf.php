@@ -1,9 +1,9 @@
 <?php
 
 $servername = 'localhost';
-$username = 'al1can';
+$username = '';
 $password = '';
-$dbname = 'loginpage';
+$dbname = '';
 
 $conn = mysqli_connect($servername,$username,$password,$dbname);
 
@@ -11,7 +11,7 @@ if (!$conn) {
 	die("Connection failed! : ". mysqli_connect_error());
 }
 
-//$sql = "SELECT username FROM users where username = 'alican'";
+//$sql = "SELECT username FROM users where username = ''";
 //$result = mysqli_query($conn, $sql);
 /*
 if (mysqli_num_rows($result) > 0) {
