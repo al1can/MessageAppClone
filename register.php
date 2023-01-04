@@ -100,13 +100,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             
             // Set parameters
             $param_username = $username;
-	    $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-	    $param_email = $email;
+	        $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+	        $param_email = $email;
             
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
-		// Redirect to login page     
-		header("location: login.php");
+		    // Redirect to login page     
+		    header("location: login.php");
 	    } else{
 		// If something goes wrong you can check with mysqli_error($conn);
                 echo "Oops! Something went wrong. Please try again later.";

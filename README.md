@@ -1,3 +1,3 @@
-# message_app_clone
-creating and managing mysql users
-https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+# MessageAppClone
+This was the first project i did about web development.
+A webpage where you can send messages to other people.
